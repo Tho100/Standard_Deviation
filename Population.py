@@ -1,15 +1,9 @@
-import cmath
+mu_mean = (sum_ar/len(ar))
 
-value = [4,5,6]
-# Find mean value of of value array
-sum_value = 0
-for k in range(len(value)):
-    sum_value = sum_value + value[k]
-value_mean = (sum_value/len(value))
-
-sum = 0
-for j in value:
-    sample = (j - value_mean)**2
-    sum = sum + sample
+# Iterate each ar value with mu_mean and squared each of them
+s = 0 
+for i in ar:
+    population = (i - mu_mean)**2
+    s = s + population
     
-print(cmath.sqrt(sum/len(value)-1))
+print(cmath.sqrt(s/len(ar)))
